@@ -1,0 +1,14 @@
+# Tools (local portable git)
+.tools/
+
+# Eredeti zip — már kicsomagolva, ne menjen fel (600+ MB)
+public/images/*.zip
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

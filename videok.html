@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barcsay utca 16 — videó bemutató, virtuális séta és drónfelvételek.">
+  <title>Barcsay utca 16 — Videók</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Barcsay utca <span>16</span></a>
+      <button class="menu-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Galéria</a></li>
+          <li><a href="muszaki.html">Műszaki leírás</a></li>
+          <li><a href="videok.html" class="active">Videók</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container fade-in">
+      <p class="section-label">Videó bemutató</p>
+      <h1>Videók</h1>
+      <div class="gold-line"></div>
+      <p>Élje át az ingatlant videón keresztül — virtuális séta, drónfelvételek és környezeti bemutató.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+
+      <!--
+        VIDEÓ HOZZÁADÁSA:
+
+        A) Saját fájl (public/videos/ mappába):
+           <div class="video-wrapper">
+             <video controls poster="public/images/gallery/01.jpg">
+               <source src="public/videos/bemutato.mp4" type="video/mp4">
+             </video>
+           </div>
+
+        B) YouTube beágyazás:
+           <div class="video-wrapper">
+             <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+           </div>
+      -->
+
+      <div class="videos-grid fade-in">
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <div class="video-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"><polygon points="5,3 19,12 5,21"/></svg>
+              <span>public/videos/bemutato.mp4</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Lakás bemutató</h3>
+            <p>Teljes körű videós séta az ingatlanon belül.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <div class="video-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"><polygon points="5,3 19,12 5,21"/></svg>
+              <span>public/videos/kornyezet.mp4</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Környezet &amp; lokáció</h3>
+            <p>A környék és a közvetlen környezet bemutatása.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <div class="video-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"><polygon points="5,3 19,12 5,21"/></svg>
+              <span>public/videos/dron.mp4</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Drónfelvétel</h3>
+            <p>Légi felvétel az épületről és a környékről.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Barcsay utca 16</p>
+      <div class="footer-gold"></div>
+      <p>Exkluzív lakóingatlan &mdash; Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barcsay utca 16 — exkluzív prémium lakás galéria és virtuális bemutató.">
+  <title>Barcsay utca 16 — Galéria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Barcsay utca <span>16</span></a>
+      <button class="menu-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Galéria</a></li>
+          <li><a href="muszaki.html">Műszaki leírás</a></li>
+          <li><a href="videok.html">Videók</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('public/images/hero/hero.jpg'); background-color: var(--ivory-deep);"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Exkluzív lakóingatlan</p>
+      <h1 class="hero-title">Barcsay utca 16</h1>
+      <div class="gold-line"></div>
+      <p class="hero-desc">Egyedi stílus, kifinomult részletek és páratlan lokáció — ahol az elegancia otthona lesz.</p>
+    </div>
+    <div class="scroll-hint">Görgessen</div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="fade-in" style="text-align: center; margin-bottom: 4rem;">
+        <p class="section-label">Galéria</p>
+        <h2>A lakás</h2>
+        <div class="gold-line"></div>
+        <p style="color: var(--text-muted); max-width: 520px; margin: 0 auto;">
+          Böngésszen a képek között — nyíl, érintés vagy teljes méretű megtekintés.
+        </p>
+      </div>
+
+      <div class="gallery-showcase fade-in">
+        <div class="gallery-featured" id="gallery-featured"></div>
+
+        <div class="gallery-carousel" id="gallery-carousel">
+          <div class="carousel-stage">
+            <button type="button" class="carousel-arrow carousel-prev" aria-label="Előző kép">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M15 6l-6 6 6 6"/></svg>
+            </button>
+
+            <div class="carousel-viewport">
+              <img class="carousel-slide" src="" alt="Galéria kép" />
+            </div>
+
+            <button type="button" class="carousel-arrow carousel-next" aria-label="Következő kép">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+
+            <button type="button" class="carousel-expand" aria-label="Teljes méret">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+            </button>
+
+            <div class="carousel-counter">
+              <span class="carousel-current">01</span>
+              <span class="carousel-sep">/</span>
+              <span class="carousel-total">55</span>
+            </div>
+          </div>
+
+          <div class="carousel-progress" aria-hidden="true">
+            <div class="carousel-progress-bar"></div>
+          </div>
+
+          <div class="carousel-thumbs-wrap">
+            <div class="carousel-thumbs" id="carousel-thumbs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Barcsay utca 16</p>
+      <div class="footer-gold"></div>
+      <p>Exkluzív lakóingatlan &mdash; Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Bezárás">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Előző">&#8249;</button>
+    <img src="" alt="Galéria kép">
+    <button class="lightbox-nav lightbox-next" aria-label="Következő">&#8250;</button>
+  </div>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
