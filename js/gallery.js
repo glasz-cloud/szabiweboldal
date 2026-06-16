@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const featuredEl = document.getElementById("gallery-featured");
   const carouselEl = document.getElementById("gallery-carousel");
   const thumbsEl = document.getElementById("carousel-thumbs");
   const lightbox = document.getElementById("lightbox");
   const showcase = document.querySelector(".gallery-showcase");
 
-  if (!featuredEl || !carouselEl || !thumbsEl || !lightbox) return;
+  if (!carouselEl || !thumbsEl || !lightbox) return;
 
   const images = (window.GALLERY_IMAGES ?? []).map((item) =>
     typeof item === "string" ? item : item.src
@@ -128,26 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
     goTo(currentIndex, true);
   }
-
-  // Featured pair (first two images)
-  images.slice(0, 2).forEach((src, index) => {
-    const item = document.createElement("div");
-    item.className = "gallery-featured-item";
-
-    const img = document.createElement("img");
-    img.src = src;
-    img.alt = `Kiemelt kép ${index + 1}`;
-    img.loading = "eager";
-
-    const label = document.createElement("span");
-    label.className = "gallery-featured-label";
-    label.textContent = pad(index);
-
-    item.appendChild(img);
-    item.appendChild(label);
-    item.addEventListener("click", () => openLightbox(index));
-    featuredEl.appendChild(item);
-  });
 
   // Thumbnails
   images.forEach((src, index) => {
